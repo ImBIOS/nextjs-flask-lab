@@ -59,6 +59,20 @@ Not tested yet, but I think it will failed.
 
 Not tested yet, but I think it will failed. It because I think Vercel recognize if there any serverless function in the project, is by detecting wether there is `api` directory or not. and if it has Next.js API, it will prefer to use Next.js API instead of Flask API.
 
-#### 3.2 🚀 Use Next.js as client side and Flask as server side, but Flask API URL changed from default (./api) to (./python)
+#### 3.2 🔴 Use Next.js as client side and Flask as server side, but Flask API URL changed from default (./api) to (./python)
 
-Note: It's working locally, and time to start testing in Vercel.
+Commit: <https://github.com/ImBIOS/nextjs-flask-starter/commit/7671c1302cd1602c7cf146e7e321f0d67a6a9eb0>
+
+Specifications (dir (url)):
+
+- Python API directory: ./api (/python)
+
+Note: It's working locally, but not working in Vercel.
+
+🔴 Python API URL: <https://nextjs-flask-starter-hyapwcbhn-imbios.vercel.app/python/hello>
+
+#### 3.3 🚀 Use Next.js as client side and Flask as server side, Flask API URL is using /api but having multiple endpoint in single file (index.py)
+
+Commit: -
+
+Note: It's working locally, start to test in Vercel.
